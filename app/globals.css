@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+.mil-projects-1,
+.mil-projects-2,
+.mil-iconbox,
+.mil-projects-3,
+.mil-projects-4 {
+  overflow: visible !important;
+}
+.mil-accordion-group .mil-active i {
+  transform: rotate(180deg);
+  transition: 0.5s all;
+}
+.mil-accordion-group.mil-active .mil-accordion-content {
+  height: 100% !important;
+}
