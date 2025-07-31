@@ -11,7 +11,7 @@ const HeaderMenu = () => {
   }, []);
 
   const currentPath = usePathname();
-  const isActive = (path) => currentPath.includes(path) ? "mil-current" : "";
+  const isActive = (path: string) => currentPath.includes(path) ? "mil-current" : "";
 
   return (
     <Fragment>
