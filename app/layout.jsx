@@ -18,42 +18,61 @@ const secondary_font = Roboto_Condensed({
   adjustFontFallback: false,
 })
 
-import "@css/plugins/bootstrap-grid.css";
+import "../public/css/plugins/bootstrap-grid.css";
 import "./globals.css";
 
-import "@css/plugins/swiper.min.css";
+import "../public/css/plugins/swiper.min.css";
 
-import "@fonts/css/font-awesome.min.css";
+import "../public/fonts/css/font-awesome.min.css";
 
-import "@css/plugins/magnific-popup.css";
+import "../public/css/plugins/magnific-popup.css";
 
-import "@css/style.css";
+import "../public/css/style.css";
 
 export const metadata = {
-  title: "Shafiq Glass & Aluminium | Premium Architectural Solutions",
+  title: {
+    default: "Shafiq Glass & Aluminium | Premium Architectural Solutions",
+    template: "%s | Shafiq Glass & Aluminium",
+  },
   description:
     "With over 15 years of experience, Shafiq Glass & Aluminium delivers high-quality glass and aluminium products and services for architectural, commercial, and residential projects across Bahrain and the region.",
-  keywords:
-    "Shafiq Glass, Aluminium Bahrain, Architectural Glass, Glass Doors, Aluminium Windows, Custom Glass Solutions, Bahrain Glass and Aluminium",
+  keywords: [
+    "Shafiq Glass",
+    "Aluminium Bahrain",
+    "Glass Services",
+    "Architectural Glass",
+    "Custom Glass Bahrain",
+    "Aluminium Windows",
+    "Glass Partitions",
+    "Bahrain Glass & Aluminium",
+  ],
+  metadataBase: new URL("https://shafiqglass.com"),
   openGraph: {
     title: "Shafiq Glass & Aluminium",
     description:
       "Trusted provider of architectural glass and aluminium services in Bahrain for over 15 years.",
-    url: "",
+    url: "https://shafiqglass.com",
     siteName: "Shafiq Glass & Aluminium",
     images: [
       {
-        url: "",
+        url: "https://shafiqglass.com/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Shafiq Glass & Aluminium",
+        alt: "Shafiq Glass & Aluminium OG Image",
       },
     ],
     locale: "en_US",
     type: "website",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
-
 
 export default function RootLayout({ children }) {
   return (
