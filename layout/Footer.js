@@ -1,45 +1,48 @@
 const Footer = () => {
   return (
     <footer>
-      <div className="container mil-p-200-100">
+      <div className="container pt-5">
         <div className="row">
           <div className="col-xl-3 mil-mb-100">
             <div className="mil-footer-logo mil-up">
-              <img loading="lazy" src="img/logo-3.png" alt="Moork" />
+              <img loading="lazy" src="img/logo.png" alt="Shafiq Glass" />
             </div>
           </div>
+
           <div className="col-xl-3 mil-mb-100">
             <h6 className="mil-soft mil-mb-30 mil-up">Main Office</h6>
             <p className="mil-soft-2 mil-mb-20 mil-up">
-              Address: 888 Grand St.
-              <br /> Unit #777, New York, NY
-              <br /> 707070, USA
+              Shafiq Glass & Aluminium Works<br />
+              Building No. 1318, Road No. 4323,<br />
+              Block No. 943, Riffa, Bahrain
             </p>
             <div className="mil-up">
-              <a href={+15559876543} className="mil-light">
-                Phone: +1 (555) 987-6543
+              <a href="tel:+97317777777" className="mil-light">
+                Phone: +973 17 777 777
               </a>
             </div>
           </div>
+
           <div className="col-xl-3 mil-mb-100">
             <h6 className="mil-soft mil-mb-30 mil-up">General Inquiries</h6>
             <p className="mil-soft-2 mil-mb-20 mil-up">
-              Have questions or need <br />
-              assistance?
+              For quotes, questions,<br />
+              or project discussions
             </p>
             <div className="mil-up">
-              <a href="mailto:info@moorkarchitects.com" className="mil-light">
-                info@moorkarchitects.com
+              <a href="mailto:info@shafiqglass.com" className="mil-light">
+                info@shafiqglass.com
               </a>
             </div>
           </div>
+
           <div className="col-xl-3 mil-mb-100">
             <h6 className="mil-soft mil-mb-30 mil-up">Stay Connected</h6>
             <ul className="mil-footer-list">
               <li className="mil-up">
                 <a
-                  target="blank"
-                  href="https://facebook.com/"
+                  target="_blank"
+                  href="https://facebook.com/shafiqglass"
                   className="mil-light"
                 >
                   Facebook
@@ -47,35 +50,37 @@ const Footer = () => {
               </li>
               <li className="mil-up">
                 <a
-                  target="blank"
-                  href="https://twitter.com/"
+                  target="_blank"
+                  href="https://instagram.com/shafiqglass"
                   className="mil-light"
                 >
-                  X.com
+                  Instagram
                 </a>
               </li>
               <li className="mil-up">
                 <a
-                  target="blank"
-                  href="https://linkedin.com/"
+                  target="_blank"
+                  href="https://linkedin.com/company/shafiqglass"
                   className="mil-light"
                 >
-                  Linkedin
+                  LinkedIn
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="container mil-p-0-200">
-        <div className="mil-footer-bottom mil-up">
+
+      <div className="container pb-5">
+        <div className="mil-footer-bottom">
           <p className="mil-text-14 mil-up">
-            © 2024 Møork Architecture &amp; Interior Design
+            © {new Date().getFullYear()} Shafiq Glass & Aluminium Works. All rights reserved.
           </p>
-          <p className="mil-text-14 mil-up">Developed by bslthemes</p>
+          <p className="mil-text-14 mil-up">Developed By Haroon</p>
         </div>
       </div>
     </footer>
   );
 };
+
 export default Footer;

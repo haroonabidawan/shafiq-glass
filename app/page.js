@@ -1,56 +1,66 @@
 "use client";
 import MoorkLayout from "@/layout/MoorkLayout";
-import { sliderProps } from "@/utility/sliderProps";
 import Link from "next/link";
+import { sliderProps } from "@/utility/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
 const page = () => {
   return (
-    <MoorkLayout header={1}>
+    <MoorkLayout header={5}>
+
       {/* banner */}
-      <div className="mil-banner mil-banner-1 mil-bg-soft">
+      <div
+        className="mil-banner mil-banner-5 mil-bg-soft"
+        style={{ backgroundImage: "url(img/home/hero.png)" }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-6">
               <div className="mil-banner-text-frame">
                 <div className="mil-banner-text">
-                  <div className="mil-suptitle mil-mb-30">ARCHITECTURE</div>
-                  <h1 className="mil-display-2 mil-mb-60">
-                    We build innovative urban spaces
+                  <div className="mil-suptitle mil-light mil-mb-30">
+                    EXPERTS IN GLASS & ALUMINIUM
+                  </div>
+                  <h1 className="mil-display-2 mil-light mil-mb-60">
+                    Precision. <br />
+                    Innovation. <br />
+                    Excellence.
                   </h1>
-                  <Link href="works-1" className="mil-btn mil-btn-border">
-                    Explore projects
+                  <Link
+                    href="projects"
+                    className="mil-btn mil-btn-border mil-light"
+                  >
+                    View Our Work
                   </Link>
                 </div>
               </div>
             </div>
             <div className="col-xl-6">
-              <div className="mil-banner-image-frame">
-                <img loading="lazy" src="img/home-1/1.jpg" alt="image" />
-              </div>
+              <div className="mil-banner-image-frame" />
             </div>
           </div>
         </div>
       </div>
       {/* banner end */}
-      {/* about */}
+
+      {/* overview */}
       <div className="mil-p-200-100">
         <div className="container">
           <div className="row flex-sm-row-reverse justify-content-between align-items-center">
             <div className="col-lg-5 mil-mb-100">
               <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                About us
+                Overview
               </div>
               <h2 className="mil-mb-30 mil-up">
-                Shaping the architectural future
+                Crafting Bahrain’s Finest Glass & Aluminium Solutions
               </h2>
               <p className="mil-mb-50 mil-up">
-                Welcome to Møork, where architectural innovation meets a legacy
-                of excellence. Founded in 2010, we have been at the forefront of
-                redefining urban landscapes, combining creativity and addressing
-                the changing needs of contemporary living.
+                With over 15 years of experience, Shafiq Glass & Aluminium has been a trusted
+                name in delivering architectural, commercial, and decorative glass and aluminium
+                solutions across Bahrain. From residential interiors to commercial facades, we
+                blend precision, quality, and innovation in every project we undertake.
               </p>
               <div className="mil-up">
-                <Link href="about" className="mil-btn mil-btn-sm">
+                <Link href="/about" className="mil-btn mil-btn-sm">
                   Know us more
                 </Link>
               </div>
@@ -61,8 +71,8 @@ const page = () => {
                   <div className="mil-image-frame">
                     <img
                       loading="lazy"
-                      src="img/home-1/2.png"
-                      alt="img"
+                      src="img/home/about-1.png"
+                      alt="Shafiq Glass Project 1"
                       data-value-1={1}
                       data-value-2="1.1"
                       className="mil-scale-img"
@@ -73,8 +83,8 @@ const page = () => {
                   <div className="mil-image-frame">
                     <img
                       loading="lazy"
-                      src="img/home-1/3.png"
-                      alt="img"
+                      src="img/home/about-2.png"
+                      alt="Shafiq Glass Project 2"
                       data-value-1={1}
                       data-value-2="1.1"
                       className="mil-scale-img"
@@ -86,7 +96,192 @@ const page = () => {
           </div>
         </div>
       </div>
+      {/* overview end */}
+
+
+      {/* iconboxes */}
+      <div className="mil-bg-dark mil-p-200-150">
+        <div className="container">
+          <div className="row mil-mb-50">
+            <div className="col-md-6 col-lg-4 mil-mb-50">
+              <div className="mil-icon mil-mb-30 mil-up">
+                <img loading="lazy" src="img/icons/9.png" alt="icon" />
+              </div>
+              <h5 className="mil-mb-20 mil-light mil-up">Mission</h5>
+              <p className="mil-up">
+                To embody excellence in every aspect of our operations, delivering superior quality products and services across local, regional, and international markets.
+              </p>
+            </div>
+            <div className="col-md-6 col-lg-4 mil-mb-50">
+              <div className="mil-icon mil-mb-30 mil-up">
+                <img loading="lazy" src="img/icons/10.png" alt="icon" />
+              </div>
+              <h5 className="mil-mb-20 mil-light mil-up">Vision</h5>
+              <p className="mil-up">
+                Harnessing 15 years of pioneering experience, our vision is to innovate the production of unique glass materials through the integration of new technologies and continuous learning.
+              </p>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="mil-icon mil-mb-30 mil-up">
+                <img loading="lazy" src="img/icons/11.png" alt="icon" />
+              </div>
+              <h5 className="mil-mb-20 mil-light mil-up">Crafted Excellence</h5>
+              <p className="mil-up">
+                Every project reflects our passion for precision and craftsmanship — setting new benchmarks in architectural glass and aluminium solutions.
+              </p>
+            </div>
+          </div>
+          <div className="mil-up">
+            <Link
+              href="services"
+              className="mil-btn mil-btn-border mil-light mil-with-arrow"
+            >
+              More about services
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* iconboxes end */}
+
+      {/* services */}
+      <div className="mil-p-200-150">
+        <div className="container">
+          <div className="row justify-content-between align-items-center">
+            <div className="col-lg-5 mil-mb-100 d-flex flex-column justify-content-center">
+              <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
+                SERVICES
+              </div>
+              <h2 className="mil-mb-30 mil-up">
+                Expert Glass & Aluminium Solutions for Every Space
+              </h2>
+              <p className="mil-up">
+                At Shafiq Glass & Aluminium, we specialize in delivering high-quality, customized solutions for residential, commercial, and industrial projects. From sleek glass installations to durable aluminium structures, we turn ideas into reality with precision and excellence.
+              </p>
+            </div>
+            <div className="col-lg-6">
+              <ul className="mil-service-list">
+                <li className="mil-mb-50 mil-up" data-count={1}>
+                  <Link href="/services/glass-partitioning" className="mil-service-item d-block cursor-pointer h-100">
+                    <div className="d-flex flex-column h-100">
+                      <h4 className="mil-accent mil-mb-15">Glass Partitioning</h4>
+                      <p>
+                        Custom glass partitions for offices, retail spaces, and homes—combining openness with privacy and elegance.
+                      </p>
+                    </div>
+                  </Link>
+                </li>
+
+                <li className="mil-mb-50 mil-up" data-count={2}>
+                  <Link href="/services/aluminium-fabrication" className="mil-service-item d-block cursor-pointer h-100">
+                    <div className="d-flex flex-column h-100">
+                      <h4 className="mil-accent mil-mb-15">Aluminium Fabrication</h4>
+                      <p>
+                        High-strength aluminium doors, windows, curtain walls, and frames tailored to architectural and functional needs.
+                      </p>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* services end */}
+
+      {/* about */}
+      <div className="mil-p-200-100">
+        <div className="container">
+          <div className="row justify-content-between align-items-center">
+            <div className="col-lg-5 mil-mb-100">
+              <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
+                About Us
+              </div>
+              <h2 className="mil-mb-30 mil-up">
+                A Legacy of Precision and Innovation
+              </h2>
+              <p className="mil-mb-50 mil-up">
+                Since our inception, Shafiq Glass & Aluminium has been redefining the standards of architectural glazing and aluminium works across Bahrain. With a focus on quality craftsmanship, cutting-edge technology, and customer satisfaction, we’ve proudly completed a wide range of residential, commercial, and industrial projects for over 15 years.
+              </p>
+              <p className="mil-mb-50 mil-up">
+                Our experienced team ensures each solution is tailored to meet the aesthetic and functional needs of every space—turning your vision into a reality with unmatched attention to detail.
+              </p>
+              <div className="mil-up">
+                <Link href="/about" className="mil-btn mil-btn-sm">
+                  Learn More About Us
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-6 mil-mb-100">
+              <div className="mil-out-image mil-up">
+                <img
+                  loading="lazy"
+                  src="img/home/about.png"
+                  alt="Shafiq Glass About Image"
+                  data-value-1={1}
+                  data-value-2="1.1"
+                  className="mil-scale-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* about end */}
+
+
+      {/* video */}
+      <div className="mil-p-200-100 mil-bg-soft">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-4 mil-mb-100">
+              <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
+                VIDEO PRESENTATION
+              </div>
+              <h2 className="mil-mb-30 mil-up">Experience Craft in Motion</h2>
+              <p className="mil-up">
+                Step inside the world of Shafiq Glass & Aluminium. Discover how precision, design, and quality come together in our bespoke glass and aluminium projects.
+              </p>
+            </div>
+            <div className="col-lg-8 mil-mb-100">
+              <div className="mil-video-frame mil-video-2 mil-up">
+                <img
+                  loading="lazy"
+                  src="img/home/video-cover.png"
+                  alt="video cover"
+                  data-value-1={1}
+                  data-value-2="1.1"
+                  className="mil-scale-img"
+                />
+                <div className="mil-play">
+                  <div>
+                    <a
+                      href="https://vimeo.com/25428289" // Replace with your actual video link
+                      className="mil-play-icon has-popup-video"
+                    >
+                      <svg
+                        width={35}
+                        height={40}
+                        viewBox="0 0 35 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M34.6667 20L0 40L1.74975e-06 0L34.6667 20Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                    <p className="mil-text-14 mil-light">PLAY VIDEO 3:45 MIN</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* video end */}
+
       {/* projects */}
       <div className="mil-bg-soft mil-p-200-200">
         <div className="container mil-relative">
@@ -95,159 +290,79 @@ const page = () => {
               <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
                 OUR MOST RECENT PROJECTS
               </div>
-              <h2 className="mil-mb-30 mil-up">Explore Our Projects</h2>
+              <h2 className="mil-mb-30 mil-up">Glass & Aluminum Installations</h2>
               <p className="mil-mb-100 mil-up">
-                From striking skyscrapers to captivating interior spaces, each
-                project reflects our dedication to innovation and creativity.
+                From elegant glass facades to premium aluminum partitions, each project reflects our craftsmanship and attention to detail.
               </p>
             </div>
           </div>
           <div className="row">
             <div className="col-lg-7">
-              <Swiper
-                {...sliderProps.milProjects1}
-                className="swiper-container mil-projects-1"
-              >
-                <SwiperSlide
-                  className="swiper-slide"
-                  data-swiper-parallax-scale="0.15"
-                >
+              <Swiper {...sliderProps.milProjects1} className="swiper-container mil-projects-1">
+                {/* Project 1 */}
+                <SwiperSlide className="swiper-slide" data-swiper-parallax-scale="0.15">
                   <Link href="work" className="mil-project-card mil-land">
                     <div className="mil-cover-frame mil-up">
                       <div className="mil-hover-frame">
                         <img
                           loading="lazy"
-                          src="img/home-1/4.png"
-                          alt="project"
+                          src="img/projects/glass-façade.jpg"
+                          alt="Glass Façade Project"
                           data-value-1={1}
                           data-value-2="1.1"
                           className="mil-scale-img"
                         />
                       </div>
                     </div>
-                    <div
-                      className="mil-descr mil-p-0"
-                      data-swiper-parallax={-100}
-                      data-swiper-parallax-opacity={0}
-                    >
-                      <h4 className="mil-mb-10">
-                        Inspiring Offices in New York
-                      </h4>
-                      <p className="mil-mb-20">Business Inspiration</p>
+                    <div className="mil-descr mil-p-0" data-swiper-parallax={-100} data-swiper-parallax-opacity={0}>
+                      <h4 className="mil-mb-10">Commercial Glass Façade</h4>
+                      <p className="mil-mb-20">Exterior Cladding System</p>
                       <span className="mil-btn mil-btn-sm">View Project</span>
                     </div>
                   </Link>
                 </SwiperSlide>
-                <SwiperSlide
-                  className="swiper-slide"
-                  data-swiper-parallax-scale="0.15"
-                >
+
+                {/* Project 2 */}
+                <SwiperSlide className="swiper-slide" data-swiper-parallax-scale="0.15">
                   <Link href="work" className="mil-project-card mil-land">
                     <div className="mil-cover-frame mil-up">
                       <div className="mil-hover-frame">
                         <img
                           loading="lazy"
-                          src="img/home-1/5.png"
-                          alt="project"
+                          src="img/projects/shopfront.jpg"
+                          alt="Aluminum Shopfront"
                           data-value-1={1}
                           data-value-2="1.1"
                           className="mil-scale-img"
                         />
                       </div>
                     </div>
-                    <div
-                      className="mil-descr mil-p-0"
-                      data-swiper-parallax={-100}
-                      data-swiper-parallax-opacity={0}
-                    >
-                      <h4 className="mil-mb-10">
-                        Eco-district ZAC Victor Hugo, Bagneux
-                      </h4>
-                      <p className="mil-mb-20">Urban Planning</p>
+                    <div className="mil-descr mil-p-0" data-swiper-parallax={-100} data-swiper-parallax-opacity={0}>
+                      <h4 className="mil-mb-10">Retail Storefront System</h4>
+                      <p className="mil-mb-20">Glass & Aluminum Framing</p>
                       <span className="mil-btn mil-btn-sm">View Project</span>
                     </div>
                   </Link>
                 </SwiperSlide>
-                <SwiperSlide
-                  className="swiper-slide"
-                  data-swiper-parallax-scale="0.15"
-                >
+
+                {/* Project 3 */}
+                <SwiperSlide className="swiper-slide" data-swiper-parallax-scale="0.15">
                   <Link href="work" className="mil-project-card mil-land">
                     <div className="mil-cover-frame mil-up">
                       <div className="mil-hover-frame">
                         <img
                           loading="lazy"
-                          src="img/home-1/6.png"
-                          alt="project"
+                          src="img/projects/partition.jpg"
+                          alt="Office Partition"
                           data-value-1={1}
                           data-value-2="1.1"
                           className="mil-scale-img"
                         />
                       </div>
                     </div>
-                    <div
-                      className="mil-descr mil-p-0"
-                      data-swiper-parallax={-100}
-                      data-swiper-parallax-opacity={0}
-                    >
-                      <h4 className="mil-mb-10">Luminar Tower</h4>
-                      <p className="mil-mb-20">Iconic skyscrapers</p>
-                      <span className="mil-btn mil-btn-sm">View Project</span>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-                <SwiperSlide
-                  className="swiper-slide"
-                  data-swiper-parallax-scale="0.15"
-                >
-                  <Link href="work" className="mil-project-card mil-land">
-                    <div className="mil-cover-frame mil-up">
-                      <div className="mil-hover-frame">
-                        <img
-                          loading="lazy"
-                          src="img/projects/1.png"
-                          alt="project"
-                          data-value-1={1}
-                          data-value-2="1.1"
-                          className="mil-scale-img"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="mil-descr mil-p-0"
-                      data-swiper-parallax={-100}
-                      data-swiper-parallax-opacity={0}
-                    >
-                      <h4 className="mil-mb-10">Luminar Tower</h4>
-                      <p className="mil-mb-20">Iconic skyscrapers</p>
-                      <span className="mil-btn mil-btn-sm">View Project</span>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-                <SwiperSlide
-                  className="swiper-slide"
-                  data-swiper-parallax-scale="0.15"
-                >
-                  <Link href="work" className="mil-project-card mil-land">
-                    <div className="mil-cover-frame mil-up">
-                      <div className="mil-hover-frame">
-                        <img
-                          loading="lazy"
-                          src="img/projects/2.png"
-                          alt="project"
-                          data-value-1={1}
-                          data-value-2="1.1"
-                          className="mil-scale-img"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="mil-descr mil-p-0"
-                      data-swiper-parallax={-100}
-                      data-swiper-parallax-opacity={0}
-                    >
-                      <h4 className="mil-mb-10">Luminar Tower</h4>
-                      <p className="mil-mb-20">Iconic skyscrapers</p>
+                    <div className="mil-descr mil-p-0" data-swiper-parallax={-100} data-swiper-parallax-opacity={0}>
+                      <h4 className="mil-mb-10">Office Glass Partitions</h4>
+                      <p className="mil-mb-20">Interior Fit-Outs</p>
                       <span className="mil-btn mil-btn-sm">View Project</span>
                     </div>
                   </Link>
@@ -266,394 +381,29 @@ const page = () => {
         </div>
       </div>
       {/* projects end */}
-      {/* counters */}
-      <div className="mil-bg-soft mil-p-0-150">
-        <div className="container">
-          <div className="row justify-content-between">
-            <div className="col-lg-3 mil-mb-50">
-              <h3 className="mil-accent mil-mb-10">
-                +{" "}
-                <span className="mil-counter" data-number={10}>
-                  10
-                </span>
-              </h3>
-              <p className="mil-dark mil-mb-15">Years of Excellence</p>
-              <p>
-                More than a decade shaping the architectural future since our
-                creation in 2010.
-              </p>
-            </div>
-            <div className="col-lg-3 mil-mb-50">
-              <h3 className="mil-accent mil-mb-10">
-                <span className="mil-counter" data-number={10}>
-                  99
-                </span>{" "}
-                %
-              </h3>
-              <p className="mil-dark mil-mb-15">Gender equality rate</p>
-              <p>
-                Emphasizes our commitment to a diverse and inclusive work
-                environment.
-              </p>
-            </div>
-            <div className="col-lg-3 mil-mb-50">
-              <h3 className="mil-accent mil-mb-10">
-                +
-                <span className="mil-counter" data-number={10}>
-                  60
-                </span>{" "}
-                Pro
-              </h3>
-              <p className="mil-dark mil-mb-15">Team Diversity</p>
-              <p>
-                More than a decade shaping the architectural future since our
-                creation in 2010.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* counters end */}
-      {/* projects */}
-      <div className="mil-p-200-200">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-6 mil-text-center">
-              <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                INNOVATION AND INSPIRATION
-              </div>
-              <h2 className="mil-mb-30 mil-up">
-                Exploring Architectural Marvels
-              </h2>
-              <p className="mil-mb-100 mil-up">
-                Step into the realm of Møork's projects, where each endeavor is
-                a testament to our passion for innovative design and
-                architectural excellence.
-              </p>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-10">
-              <Swiper
-                {...sliderProps.milProjects2}
-                className="swiper-container mil-projects-2"
-              >
-                <SwiperSlide className="swiper-slide">
-                  <Link href="work" className="mil-project-card mil-land">
-                    <div className="mil-cover-frame mil-up">
-                      <div className="mil-hover-frame">
-                        <img
-                          loading="lazy"
-                          src="img/home-1/7.png"
-                          alt="project"
-                          data-value-1={1}
-                          data-value-2="1.1"
-                          className="mil-scale-img"
-                        />
-                      </div>
-                    </div>
-                    <div className="mil-descr mil-with-bg mil-inner mil-hover">
-                      <h4 className="mil-mb-10">
-                        Inspiring Offices in New York
-                      </h4>
-                      <p>Business Inspiration</p>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <Link href="work" className="mil-project-card mil-land">
-                    <div className="mil-cover-frame mil-up">
-                      <div className="mil-hover-frame">
-                        <img
-                          loading="lazy"
-                          src="img/home-1/8.png"
-                          alt="project"
-                          data-value-1={1}
-                          data-value-2="1.1"
-                          className="mil-scale-img"
-                        />
-                      </div>
-                    </div>
-                    <div className="mil-descr mil-with-bg mil-inner mil-hover">
-                      <h4 className="mil-mb-10">
-                        Eco-district ZAC Victor Hugo, Bagneux
-                      </h4>
-                      <p>Urban Planning</p>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <Link href="work" className="mil-project-card mil-land">
-                    <div className="mil-cover-frame mil-up">
-                      <div className="mil-hover-frame">
-                        <img
-                          loading="lazy"
-                          src="img/home-1/9.png"
-                          alt="project"
-                          data-value-1={1}
-                          data-value-2="1.1"
-                          className="mil-scale-img"
-                        />
-                      </div>
-                    </div>
-                    <div className="mil-descr mil-with-bg mil-inner mil-hover">
-                      <h4 className="mil-mb-10">Luminar Tower</h4>
-                      <p>Iconic skyscrapers</p>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <Link href="work" className="mil-project-card mil-land">
-                    <div className="mil-cover-frame mil-up">
-                      <div className="mil-hover-frame">
-                        <img
-                          loading="lazy"
-                          src="img/home-6/2.png"
-                          alt="project"
-                          data-value-1={1}
-                          data-value-2="1.1"
-                          className="mil-scale-img"
-                        />
-                      </div>
-                    </div>
-                    <div className="mil-descr mil-with-bg mil-inner mil-hover">
-                      <h4 className="mil-mb-10">Luminar Tower</h4>
-                      <p>Iconic skyscrapers</p>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <Link href="work" className="mil-project-card mil-land">
-                    <div className="mil-cover-frame mil-up">
-                      <div className="mil-hover-frame">
-                        <img
-                          loading="lazy"
-                          src="img/home-6/3.png"
-                          alt="project"
-                          data-value-1={1}
-                          data-value-2="1.1"
-                          className="mil-scale-img"
-                        />
-                      </div>
-                    </div>
-                    <div className="mil-descr mil-with-bg mil-inner mil-hover">
-                      <h4 className="mil-mb-10">Luminar Tower</h4>
-                      <p>Iconic skyscrapers</p>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* projects end */}
-      {/* team */}
-      <div className="mil-p-200-170 mil-bg-soft">
-        <div className="container">
-          <div className="row justify-content-center align-items-center">
-            <div className="col-lg-6 mil-text-center">
-              <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                OUR PROJECTS
-              </div>
-              <h2 className="mil-mb-30 mil-up">Innovation in Action</h2>
-              <p className="mil-mb-100 mil-up">
-                Our passion for architecture and urban design is reflected in
-                the projects we have carried out over the years.
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-6 col-lg-3 mil-mb-30">
-              <Link href="about" className="mil-team-card mil-long">
-                <div className="mil-cover-frame mil-up">
-                  <div className="mil-hover-frame">
-                    <img
-                      loading="lazy"
-                      src="img/about/team-1/1.png"
-                      alt="Team member"
-                      data-value-1={1}
-                      data-value-2="1.1"
-                      className="mil-scale-img"
-                    />
-                  </div>
-                </div>
-                <div className="mil-descr mil-up">
-                  <h6 className="mil-mb-10">Eddy Smith</h6>
-                  <p>Creative Director</p>
-                </div>
-              </Link>
-            </div>
-            <div className="col-sm-6 col-lg-3 mil-mb-30">
-              <Link href="about" className="mil-team-card mil-long">
-                <div className="mil-cover-frame mil-up">
-                  <div className="mil-hover-frame">
-                    <img
-                      loading="lazy"
-                      src="img/about/team-1/2.png"
-                      alt="Team member"
-                      data-value-1={1}
-                      data-value-2="1.1"
-                      className="mil-scale-img"
-                    />
-                  </div>
-                </div>
-                <div className="mil-descr mil-up">
-                  <h6 className="mil-mb-10">Maria Rodriguez</h6>
-                  <p>Principal Architect</p>
-                </div>
-              </Link>
-            </div>
-            <div className="col-sm-6 col-lg-3 mil-mb-30">
-              <Link href="about" className="mil-team-card mil-long">
-                <div className="mil-cover-frame mil-up">
-                  <div className="mil-hover-frame">
-                    <img
-                      loading="lazy"
-                      src="img/about/team-1/3.png"
-                      alt="Team member"
-                      data-value-1={1}
-                      data-value-2="1.1"
-                      className="mil-scale-img"
-                    />
-                  </div>
-                </div>
-                <div className="mil-descr mil-up">
-                  <h6 className="mil-mb-10">David Chen</h6>
-                  <p>Urban Design Specialist</p>
-                </div>
-              </Link>
-            </div>
-            <div className="col-sm-6 col-lg-3 mil-mb-30">
-              <Link href="about" className="mil-team-card mil-long">
-                <div className="mil-cover-frame mil-up">
-                  <div className="mil-hover-frame">
-                    <img
-                      loading="lazy"
-                      src="img/about/team-1/4.png"
-                      alt="Team member"
-                      data-value-1={1}
-                      data-value-2="1.1"
-                      className="mil-scale-img"
-                    />
-                  </div>
-                </div>
-                <div className="mil-descr mil-up">
-                  <h6 className="mil-mb-10">Lisa Walker</h6>
-                  <p>Interior Architect</p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* team end */}
-      {/* brands */}
-      <div className="mil-bg-soft mil-p-0-170">
-        <div className="container">
-          <p className="mil-mb-100 mil-dark mil-up">
-            Building Futures Together with Our Esteemed Partners
-          </p>
-          <div className="row">
-            <div className="col-6 col-xl-3 mil-mb-30">
-              <div className="mil-brand-frame mil-up">
-                <img loading="lazy" src="img/brands/1.svg" alt="brand" />
-              </div>
-            </div>
-            <div className="col-6 col-xl-3 mil-mb-30">
-              <div className="mil-brand-frame mil-up">
-                <img loading="lazy" src="img/brands/2.svg" alt="brand" />
-              </div>
-            </div>
-            <div className="col-6 col-xl-3 mil-mb-30">
-              <div className="mil-brand-frame mil-up">
-                <img loading="lazy" src="img/brands/3.svg" alt="brand" />
-              </div>
-            </div>
-            <div className="col-6 col-xl-3 mil-mb-30">
-              <div className="mil-brand-frame mil-up">
-                <img loading="lazy" src="img/brands/4.svg" alt="brand" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* brands end */}
-      {/* about */}
-      <div className="mil-p-200-100">
-        <div className="container">
-          <div className="row justify-content-between align-items-center">
-            <div className="col-lg-5 mil-mb-100">
-              <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                ENVIRONMENTAL RESPONSIBILITY
-              </div>
-              <h2 className="mil-mb-30 mil-up">
-                Sustainable Architecture, Lasting Impact
-              </h2>
-              <p className="mil-mb-50 mil-up">
-                Explore our dedication to green architecture, where innovation
-                meets environmental stewardship, creating spaces that stand the
-                test of time while preserving the planet.
-              </p>
-              <div className="mil-up">
-                <Link href="about" className="mil-btn mil-btn-sm">
-                  Know us more
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-6 mil-mb-100">
-              <div className="mil-illustration-5">
-                <div className="mil-image-position mil-up">
-                  <div className="mil-image-frame">
-                    <img
-                      loading="lazy"
-                      src="img/home-1/10.png"
-                      alt="img"
-                      data-value-1={1}
-                      data-value-2="1.1"
-                      className="mil-scale-img"
-                    />
-                  </div>
-                </div>
-                <div className="mil-image-position mil-up">
-                  <div className="mil-image-frame">
-                    <img
-                      loading="lazy"
-                      src="img/home-1/11.png"
-                      alt="img"
-                      data-value-1={1}
-                      data-value-2="1.1"
-                      className="mil-scale-img"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* about end */}
+
       {/* call to action */}
-      <div className="mil-p-200-200 mil-bg-accent">
+      <div
+        className="mil-p-200-200 mil-bg-image"
+        style={{ backgroundImage: "url(img/call-to-action/contact-background.png)" }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-6">
               <div className="mil-suptitle mil-sm mil-light mil-mb-30 mil-up">
-                TAKE A LOOK AT
+                CONTACT US TO START YOUR NEXT PROJECT
               </div>
               <h2 className="mil-h1 mil-light mil-mb-30 mil-up">
-                Сontact us to discuss the details
+                Let’s bring your vision to life
               </h2>
-              <p className="mil-light mil-mb-50 mil-up">
-                Contact us today to embark on a journey of collaborative design
-                and architectural brilliance.
+              <p className="mil-light mil-mb-40 mil-up">
+                If you would like to discuss your design needs, collaborate on a
+                project or simply find out more about our work, please don’t
+                hesitate to get in touch.
               </p>
               <div className="mil-up">
-                <Link
-                  href="contact"
-                  className="mil-btn mil-btn-border mil-light"
-                >
-                  Discover more
+                <Link href="/contact" className="mil-btn mil-btn-sm mil-btn-light">
+                  Contact Us
                 </Link>
               </div>
             </div>
@@ -661,6 +411,8 @@ const page = () => {
         </div>
       </div>
       {/* call to action end */}
+
+
     </MoorkLayout>
   );
 };
