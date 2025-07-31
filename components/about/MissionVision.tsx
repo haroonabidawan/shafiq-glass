@@ -1,3 +1,4 @@
+import React from "react";
 import { IoTelescope } from "react-icons/io5";
 import { FaGraduationCap, FaPencilRuler } from "react-icons/fa";
 
