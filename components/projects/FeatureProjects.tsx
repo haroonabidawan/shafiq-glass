@@ -1,5 +1,6 @@
 'use client';
 
+import React from "react";
 import Link from "next/link";
 import { sliderProps } from "@/utility/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -58,7 +59,7 @@ const FeatureProjects = () => {
                                     className="swiper-slide"
                                     data-swiper-parallax-scale="0.15"
                                 >
-                                    <div href={project.link} className="mil-project-card mil-land">
+                                    <div className="mil-project-card mil-land">
                                         <div className="mil-cover-frame mil-up">
                                             <div className="mil-hover-frame">
                                                 <img
