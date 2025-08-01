@@ -25,7 +25,7 @@ const MoorkLayout = ({ children, header }: MoorkLayoutProps) => {
         {/* back to top */}
         <BackToTop />
         {/* top panel */}
-        <Header header={header} />
+        <Header header={header ?? 0} />
         {/* top panel end */}
         {/* content */}
         <div id="smooth-content" className="mil-content">
