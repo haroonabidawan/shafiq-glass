@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import { moorkUtility } from "@/utility";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { Fragment, useEffect, useState } from "react";
+'use client';
+import React from 'react';
+import { moorkUtility } from '@/utility';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Fragment, useEffect, useState } from 'react';
 
 const HeaderMenu = () => {
   useEffect(() => {
@@ -11,32 +11,32 @@ const HeaderMenu = () => {
   }, []);
 
   const currentPath = usePathname();
-  const isActive = (path: string) => currentPath.includes(path) ? "mil-current" : "";
+  const isActive = (path: string) =>
+    currentPath.includes(path) ? 'mil-current' : '';
 
   return (
     <Fragment>
       {/* <li className={currentPath === "/" ? "mil-current" : ""}>
         <Link href="/">Home</Link>
       </li> */}
-      <li className={isActive("about")}>
+      <li className={isActive('about')}>
         <Link href="/about">About Us</Link>
       </li>
-      <li className={isActive("services")}>
+      <li className={isActive('services')}>
         <Link href="/services">Services</Link>
       </li>
-      <li className={isActive("projects")}>
+      <li className={isActive('projects')}>
         <Link href="/projects">Projects</Link>
       </li>
-      <li className={isActive("contact")}>
+      <li className={isActive('contact')}>
         <Link href="/contact">Contact</Link>
       </li>
     </Fragment>
   );
 };
 
-
-const Header = ({ header }) => {
-  console.log("Header Value", header);
+const Header = ({ header }: { header: string }) => {
+  console.log('Header Value', header);
   switch (header) {
     case 5:
       return <Header5 />;
@@ -60,14 +60,15 @@ const Header5 = () => {
           <div className="mil-right">
             <nav>
               <ul
-                className={`mil-navigation mil-white ${toggle ? "mil-active" : ""
-                  }`}
+                className={`mil-navigation mil-white ${
+                  toggle ? 'mil-active' : ''
+                }`}
               >
                 <HeaderMenu />
               </ul>
             </nav>
             <div
-              className={`mil-menu-btn ${toggle ? "mil-active" : ""}`}
+              className={`mil-menu-btn ${toggle ? 'mil-active' : ''}`}
               onClick={() => setToggle(!toggle)}
             >
               <span />
@@ -92,8 +93,9 @@ const DefaultHeader = () => {
             </Link>
             <nav>
               <ul
-                className={`mil-navigation mil-white mil-center ${toggle ? "mil-active" : ""
-                  }`}
+                className={`mil-navigation mil-white mil-center ${
+                  toggle ? 'mil-active' : ''
+                }`}
               >
                 <HeaderMenu />
               </ul>
@@ -101,7 +103,7 @@ const DefaultHeader = () => {
           </div>
           <div className="mil-right">
             <div
-              className={`mil-menu-btn ${toggle ? "mil-active" : ""}`}
+              className={`mil-menu-btn ${toggle ? 'mil-active' : ''}`}
               onClick={() => setToggle(!toggle)}
             >
               <span />
