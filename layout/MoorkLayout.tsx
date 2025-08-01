@@ -1,12 +1,19 @@
-"use client";
-import React from "react";
-import EmbedPopup from "@/components/EmbedPopup";
-import { moorkUtility } from "@/utility";
-import { Fragment, useEffect } from "react";
-import BackToTop from "./BackToTop";
-import Footer from "./Footer";
-import Header from "./Header";
-const MoorkLayout = ({ children, header }) => {
+'use client';
+import React from 'react';
+import EmbedPopup from '@/components/EmbedPopup';
+import { moorkUtility } from '@/utility';
+import { Fragment, useEffect } from 'react';
+import BackToTop from './BackToTop';
+import Footer from './Footer';
+import Header from './Header';
+import type { ReactNode } from 'react';
+
+interface MoorkLayoutProps {
+  children: ReactNode;
+  header?: number;
+}
+
+const MoorkLayout = ({ children, header }: MoorkLayoutProps) => {
   useEffect(() => {
     moorkUtility.scrollAnimations();
     moorkUtility.counters();

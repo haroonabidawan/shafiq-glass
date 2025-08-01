@@ -35,7 +35,7 @@ const HeaderMenu = () => {
   );
 };
 
-const Header = ({ header }: { header: string }) => {
+const Header = ({ header }: { header: number }) => {
   console.log('Header Value', header);
   switch (header) {
     case 5:
