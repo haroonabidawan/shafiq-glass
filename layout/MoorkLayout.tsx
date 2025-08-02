@@ -10,10 +10,9 @@ import type { ReactNode } from 'react';
 
 interface MoorkLayoutProps {
   children: ReactNode;
-  header?: number;
 }
 
-const MoorkLayout = ({ children, header }: MoorkLayoutProps) => {
+const MoorkLayout = ({ children }: MoorkLayoutProps) => {
   useEffect(() => {
     moorkUtility.scrollAnimations();
     moorkUtility.counters();
@@ -25,7 +24,7 @@ const MoorkLayout = ({ children, header }: MoorkLayoutProps) => {
         {/* back to top */}
         <BackToTop />
         {/* top panel */}
-        <Header header={header ?? 0} />
+        <Header />
         {/* top panel end */}
         {/* content */}
         <div id="smooth-content" className="mil-content">
