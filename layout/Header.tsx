@@ -1,24 +1,17 @@
 'use client';
-import React from 'react';
+
+import React, { Fragment, useEffect, useState } from 'react';
 import { moorkUtility } from '@/utility';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Fragment, useEffect, useState } from 'react';
 
 const HeaderMenu = () => {
-  useEffect(() => {
-    moorkUtility.stickMenu();
-  }, []);
-
   const currentPath = usePathname();
   const isActive = (path: string) =>
     currentPath.includes(path) ? 'mil-current' : '';
 
   return (
     <Fragment>
-      {/* <li className={currentPath === "/" ? "mil-current" : ""}>
-        <Link href="/">Home</Link>
-      </li> */}
       <li className={isActive('about')}>
         <Link href="/about">About Us</Link>
       </li>
@@ -35,27 +28,26 @@ const HeaderMenu = () => {
   );
 };
 
-const Header = ({ header }: { header: number }) => {
-  switch (header) {
-    case 5:
-      return <Header5 />;
-    default:
-      return <DefaultHeader />;
-  }
-};
-
-const Header5 = () => {
+const Header = () => {
   const [toggle, setToggle] = useState(false);
+  const currentPath = usePathname();
+
+  useEffect(() => {
+    moorkUtility.stickMenu();
+  }, []);
+
+  const isHome = currentPath === '/';
+
   return (
-    <div className="mil-top-panel-frame">
+    <div className={`mil-top-panel-frame ${!isHome ? 'mil-light-panel' : ''}`}>
       <div className="container">
         <div className="mil-top-panel">
-          {/* mil-just-left mil-just-between */}
           <div className="mil-left">
             <Link href="/" className="mil-logo mil-logo-sm">
-              <img loading="lazy" src="img/logo.png" alt="Moork" />
+              <img loading="lazy" src="/img/logo.png" alt="Shafiq Glass" />
             </Link>
           </div>
+
           <div className="mil-right">
             <nav>
               <ul
@@ -66,41 +58,7 @@ const Header5 = () => {
                 <HeaderMenu />
               </ul>
             </nav>
-            <div
-              className={`mil-menu-btn ${toggle ? 'mil-active' : ''}`}
-              onClick={() => setToggle(!toggle)}
-            >
-              <span />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
-const DefaultHeader = () => {
-  const [toggle, setToggle] = useState(false);
-  return (
-    <div className="mil-top-panel-frame mil-light-panel">
-      <div className="container">
-        <div className="mil-top-panel">
-          {/* mil-just-left mil-just-between */}
-          <div className="mil-left">
-            <Link href="/" className="mil-logo">
-              <img loading="lazy" src="img/logo.png" alt="Moork" />
-            </Link>
-            <nav>
-              <ul
-                className={`mil-navigation mil-white mil-center ${
-                  toggle ? 'mil-active' : ''
-                }`}
-              >
-                <HeaderMenu />
-              </ul>
-            </nav>
-          </div>
-          <div className="mil-right">
             <div
               className={`mil-menu-btn ${toggle ? 'mil-active' : ''}`}
               onClick={() => setToggle(!toggle)}
