@@ -1,53 +1,53 @@
-import React from "react";
+import React from 'react';
 
-import Link from "next/link";
-import Overview from "@/components/about/Overview";
-import MissionVision from "@/components/about/MissionVision";
-import Services from "@/components/services/Services";
-import AboutBreif from "@/components/about/AboutBreif";
-import VideoPresentation from "@/components/video/VideoPresentation";
-import FeatureProjects from "@/components/projects/FeatureProjects";
-import CallToContact from "@/components/call-to-action/CallToContact";
-import MoorkLayout from "@/layout/MoorkLayout";
+import Link from 'next/link';
+import Overview from '@/components/about/Overview';
+import MissionVision from '@/components/about/MissionVision';
+import Services from '@/components/services/Services';
+import AboutBreif from '@/components/about/AboutBreif';
+import VideoPresentation from '@/components/video/VideoPresentation';
+import FeatureProjects from '@/components/projects/FeatureProjects';
+import CallToContact from '@/components/call-to-action/CallToContact';
+import MoorkLayout from '@/layout/MoorkLayout';
+import WhatWeDo from '@/components/about/WhatWeDo';
 
 export const metadata = {
-  title: "Glass & Aluminium Experts in Bahrain",
+  title: 'Glass & Aluminium Experts in Bahrain',
   description:
-    "Explore Shafiq Glass & Aluminium’s expert solutions in custom glass, partitions, aluminium doors & more. Serving Bahrain for 15+ years.",
+    'Explore Shafiq Glass & Aluminium’s expert solutions in custom glass, partitions, aluminium doors & more. Serving Bahrain for 15+ years.',
   keywords: [
-    "Glass Bahrain",
-    "Aluminium Fabrication",
-    "Office Partitions",
-    "Glass Company",
-    "Aluminium Windows Bahrain",
+    'Glass Bahrain',
+    'Aluminium Fabrication',
+    'Office Partitions',
+    'Glass Company',
+    'Aluminium Windows Bahrain',
   ],
   openGraph: {
-    title: "Glass & Aluminium Experts in Bahrain",
+    title: 'Glass & Aluminium Experts in Bahrain',
     description:
-      "Custom solutions in glass and aluminium for homes, offices, and commercial buildings in Bahrain.",
-    url: "https://shafiqglass.com",
-    siteName: "Shafiq Glass & Aluminium",
+      'Custom solutions in glass and aluminium for homes, offices, and commercial buildings in Bahrain.',
+    url: 'https://shafiqglass.com',
+    siteName: 'Shafiq Glass & Aluminium',
     images: [
       {
-        url: "https://shafiqglass.com/og-home.jpg",
+        url: 'https://shafiqglass.com/og-home.jpg',
         width: 1200,
         height: 630,
-        alt: "Shafiq Glass Home Banner",
+        alt: 'Shafiq Glass Home Banner',
       },
     ],
-    locale: "en_US",
-    type: "website",
+    locale: 'en_US',
+    type: 'website',
   },
 };
 
 const page = () => {
   return (
     <MoorkLayout header={5}>
-
       {/* banner */}
       <div
         className="mil-banner mil-banner-5 mil-bg-soft"
-        style={{ backgroundImage: "url(img/home/hero.png)" }}
+        style={{ backgroundImage: 'url(img/home/hero.png)' }}
       >
         <div className="container">
           <div className="row">
@@ -83,6 +83,7 @@ const page = () => {
       <MissionVision />
       <Services />
       <AboutBreif />
+      <WhatWeDo />
       <VideoPresentation />
       <FeatureProjects />
       <CallToContact />

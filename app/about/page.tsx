@@ -5,6 +5,7 @@ import Services from '@/components/services/Services';
 import FeatureProjects from '@/components/projects/FeatureProjects';
 import CallToContact from '@/components/call-to-action/CallToContact';
 import MissionVision from '@/components/about/MissionVision';
+import WhatWeDo from '@/components/about/WhatWeDo';
 
 const page = () => {
   return (
@@ -76,6 +77,8 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      <WhatWeDo background="mil-bg-soft" />
 
       {/* Certifications */}
       <div className="mil-p-0-100">
