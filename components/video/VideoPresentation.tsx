@@ -24,7 +24,7 @@ const VideoPresentation = () => {
           <div className="col-lg-8 mil-mb-100">
             <div className="mil-video-frame mil-video-2 mil-up relative">
               <Image
-                src="/img/home/video-cover.png"
+                src="/img/home/video-cover.jpg"
                 alt="Shafiq Glass & Aluminium video preview"
                 width={800}
                 height={450}
