@@ -22,9 +22,6 @@ const HeaderMenu = () => {
       <li className={isActive('about')}>
         <Link href="/about">About Us</Link>
       </li>
-      <li className={isActive('what-we-do')}>
-        <Link href="/what-we-do">What We Do</Link>
-      </li>
       <li className={isActive('services')}>
         <Link href="/services">Services</Link>
       </li>

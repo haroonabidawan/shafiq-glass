@@ -36,7 +36,7 @@ const AboutBreif = () => {
             <div className="mil-out-image mil-up">
               <img
                 loading="lazy"
-                src="img/home/about.jpg"
+                src="img/about/about.jpg"
                 alt="Shafiq Glass About Image"
                 data-value-1={1}
                 data-value-2="1.1"

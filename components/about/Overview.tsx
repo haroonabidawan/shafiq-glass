@@ -32,7 +32,7 @@ const Overview = () => {
                 <div className="mil-image-frame">
                   <img
                     loading="lazy"
-                    src="img/home/about-1.jpg"
+                    src="img/about/about-1.jpg"
                     alt="Shafiq Glass Project 1"
                     data-value-1={1}
                     data-value-2="1.1"
@@ -44,7 +44,7 @@ const Overview = () => {
                 <div className="mil-image-frame">
                   <img
                     loading="lazy"
-                    src="img/home/about-2.jpg"
+                    src="img/about/about-2.jpg"
                     alt="Shafiq Glass Project 2"
                     data-value-1={1}
                     data-value-2="1.1"
