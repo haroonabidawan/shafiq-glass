@@ -43,7 +43,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <MoorkLayout header={5}>
+    <MoorkLayout>
       {/* banner */}
       <div
         className="mil-banner mil-banner-5 mil-bg-soft"
