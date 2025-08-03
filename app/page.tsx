@@ -2,16 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 
 import Overview from '@/components/about/Overview';
-import MissionVision from '@/components/about/MissionVision';
 import Services from '@/components/services/Services';
 import AboutBreif from '@/components/about/AboutBreif';
 import VideoPresentation from '@/components/video/VideoPresentation';
 import FeatureProjects from '@/components/projects/FeatureProjects';
 import CallToContact from '@/components/call-to-action/CallToContact';
 import MoorkLayout from '@/layout/MoorkLayout';
+import MissionVision from '@/components/about/MissionVision';
 
 export const metadata = {
-  title: 'Shafiq Glass & Aluminum | Experts in Glass & Aluminum - Bahrain',
+  title:
+    'Shafiq Glass & Aluminum | Glass Fabricators & Subcontractors - Bahrain',
   description:
     'Shafiq Glass & Aluminum delivers premium glass and aluminum solutions for residential, commercial, and industrial projects in Bahrain. Specialists in custom facades, partitions, windows, and doors.',
   keywords: [
@@ -24,11 +25,18 @@ export const metadata = {
     'Glass Doors Bahrain',
     'Commercial Glazing',
     'Structural Glazing Bahrain',
+    'Glass Fabrication Bahrain',
+    'Architectural Glazing Subcontractor',
+    'Glass Subcontractors Bahrain',
+    'Custom Glass Fabrication',
+    'Curtain Wall Installation',
+    'Aluminum Cladding Bahrain',
+    'Glass & Aluminum Subcontracting',
   ],
   openGraph: {
-    title: 'Shafiq Glass & Aluminum | Glass & Aluminum Experts in Bahrain',
+    title: 'Shafiq Glass & Aluminum | Glass Fabrication Specialists',
     description:
-      'Precision-engineered glass and aluminum solutions since 2005. Serving Bahrain with innovative architectural glazing and fabrication services.',
+      'Bahrain-based glass fabrication experts providing subcontracting services for commercial and residential construction projects.',
     url: 'https://shafiqglass.com',
     siteName: 'Shafiq Glass & Aluminum',
     images: [
@@ -36,7 +44,7 @@ export const metadata = {
         url: 'https://shafiqglass.com/og-home.jpg',
         width: 1200,
         height: 630,
-        alt: 'Shafiq Glass & Aluminum - Premium Glass Solutions',
+        alt: 'Glass Fabrication Process at Shafiq Glass',
       },
     ],
     locale: 'en_US',
