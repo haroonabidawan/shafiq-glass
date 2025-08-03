@@ -15,6 +15,9 @@ const HeaderMenu = () => {
       <li className={isActive('about')}>
         <Link href="/about">About Us</Link>
       </li>
+      <li className={isActive('request-qoute')}>
+        <Link href="/request-qoute">Request Qoute</Link>
+      </li>
       <li className={isActive('services')}>
         <Link href="/services">Services</Link>
       </li>
@@ -44,7 +47,7 @@ const Header = () => {
         <div className="mil-top-panel">
           <div className="mil-left">
             <Link href="/" className="mil-logo mil-logo-sm">
-              <img loading="lazy" src="/img/logo.png" alt="Shafiq Glass" />
+              <img loading="lazy" src="/logo.png" alt="Shafiq Glass" />
             </Link>
           </div>
 

@@ -3,47 +3,26 @@
 import React from 'react';
 import { sliderProps } from '@/utility/sliderProps';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-const projects = [
-  {
-    title: 'Commercial Glass Façade',
-    subtitle: 'Modern Cladding System',
-    image: '/img/projects/glass-façade.jpg',
-    link: '/projects/glass-facade',
-    alt: 'Modern commercial glass façade',
-  },
-  {
-    title: 'Retail Storefront System',
-    subtitle: 'Glass & Aluminium Framing',
-    image: '/img/projects/shopfront.jpg',
-    link: '/projects/shopfront-system',
-    alt: 'Aluminium shopfront installation',
-  },
-  {
-    title: 'Office Glass Partitions',
-    subtitle: 'Interior Fit-Outs',
-    image: '/img/projects/partition.jpg',
-    link: '/projects/office-partitions',
-    alt: 'Office interior glass partitioning',
-  },
-];
+import { getFeaturedProjects } from '@/data/projects';
 
 const FeatureProjects = () => {
+  const featuredProjects = getFeaturedProjects();
+
   return (
     <div className="mil-bg-soft mil-p-200-200">
       <div className="container mil-relative">
         <div className="row">
           <div className="col-lg-6">
             <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-              OUR MOST RECENT PROJECTS
+              FEATURED PROJECTS
             </div>
             <h2 className="mil-mb-30 mil-up">
-              Signature Glass & Aluminium Installations
+              Signature Glass & Aluminum Installations
             </h2>
             <p className="mil-mb-100 mil-up">
-              Discover our commitment to excellence through our latest
+              Explore our commitment to excellence through our most prestigious
               projects—crafted to meet the highest standards in aesthetics and
-              performance.
+              performance across Bahrain.
             </p>
           </div>
         </div>
@@ -54,9 +33,9 @@ const FeatureProjects = () => {
               {...sliderProps.milProjects1}
               className="swiper-container mil-projects-1"
             >
-              {projects.map((project, idx) => (
+              {featuredProjects.map((project) => (
                 <SwiperSlide
-                  key={idx}
+                  key={project.id}
                   className="swiper-slide"
                   data-swiper-parallax-scale="0.15"
                 >
@@ -78,9 +57,16 @@ const FeatureProjects = () => {
                       data-swiper-parallax={-100}
                       data-swiper-parallax-opacity={0}
                     >
+                      <div className="mil-project-label mil-mb-10">
+                        <span className="mil-accent">{project.category}</span>
+                      </div>
                       <h4 className="mil-mb-10">{project.title}</h4>
-                      <p className="mil-mb-20">{project.subtitle}</p>
-                      {/* <span className="mil-btn mil-btn-sm">View Project</span> */}
+                      <p className="mil-text-sm mil-mb-20">
+                        {project.subtitle}
+                      </p>
+                      <p className="mil-text-sm mil-light-soft">
+                        {project.description}
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>

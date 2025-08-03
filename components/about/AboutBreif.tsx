@@ -11,23 +11,22 @@ const AboutBreif = () => {
               About Us
             </div>
             <h2 className="mil-mb-30 mil-up">
-              A Legacy of Precision and Innovation
+              Bahrain&apos;s Glass & Aluminum Experts Since 2005
             </h2>
-            <p className="mil-mb-50 mil-up">
-              Since our inception, Shafiq Glass & Aluminium has been redefining
-              the standards of architectural glazing and aluminium works across
-              Bahrain. With a focus on quality craftsmanship, cutting-edge
-              technology, and customer satisfaction, we’ve proudly completed a
-              wide range of residential, commercial, and industrial projects for
-              over 15 years.
+            <p className="mil-mb-30 mil-up">
+              Shafiq Glass & Aluminum has been delivering precision-engineered
+              architectural solutions from our 5,500 sqm facility in Hidd
+              Industrial Area. With state-of-the-art machinery and 50+ skilled
+              professionals, we meet international standards for all glass and
+              aluminum applications.
             </p>
             <p className="mil-mb-50 mil-up">
-              Our experienced team ensures each solution is tailored to meet the
-              aesthetic and functional needs of every space—turning your vision
-              into a reality with unmatched attention to detail.
+              From commercial curtain walls to residential installations, our
+              end-to-end services ensure quality craftsmanship for every project
+              across Bahrain.
             </p>
             <div className="mil-up">
-              <Link href="/about" className="mil-btn mil-btn-sm">
+              <Link href="/about" className="mil-btn mil-btn-sm mil-with-arrow">
                 Read More
               </Link>
             </div>
@@ -37,7 +36,7 @@ const AboutBreif = () => {
               <img
                 loading="lazy"
                 src="img/about/about.jpg"
-                alt="Shafiq Glass About Image"
+                alt="Shafiq Glass manufacturing facility"
                 data-value-1={1}
                 data-value-2="1.1"
                 className="mil-scale-img"

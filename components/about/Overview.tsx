@@ -11,14 +11,14 @@ const Overview = () => {
               Overview
             </div>
             <h2 className="mil-mb-30 mil-up">
-              Crafting Bahrain’s Finest Glass & Aluminium Solutions
+              Crafting Bahrain&apos;s Finest Glass & Aluminum Solutions
             </h2>
             <p className="mil-mb-50 mil-up">
-              With over 15 years of experience, Shafiq Glass & Aluminium has
-              been a trusted name in delivering architectural, commercial, and
-              decorative glass and aluminium solutions across Bahrain. From
-              residential interiors to commercial facades, we blend precision,
-              quality, and innovation in every project we undertake.
+              Since 2005, Shafiq Glass & Aluminum has been a trusted name in
+              delivering architectural glass and aluminum solutions across
+              Bahrain. Our expertise spans commercial facades to residential
+              installations, combining precision engineering with innovative
+              design in every project.
             </p>
             <div className="mil-up">
               <Link href="/about" className="mil-btn mil-btn-sm mil-with-arrow">

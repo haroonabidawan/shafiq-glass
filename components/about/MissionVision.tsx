@@ -6,21 +6,21 @@ const MissionVision = () => {
   const items = [
     {
       icon: <IoTelescope className="mil-light" fontSize="50px" />,
-      title: 'Mission',
+      title: 'Vision',
       description:
-        'To embody excellence in our operations, delivering quality products and services across global markets.',
+        'To pioneer the production of innovative aluminium and glass products utilizing cutting-edge technology and continuous education.',
     },
     {
       icon: <FaGraduationCap className="mil-light" fontSize="50px" />,
-      title: 'Vision',
+      title: 'Mission',
       description:
-        'With 15 years of experience, we aim to innovate unique glass materials using cutting-edge technologies and learning.',
+        'We strive for excellence in providing top-tier quality products and services, backed by dedicated technical support for local, regional, and international markets.',
     },
     {
       icon: <FaPencilRuler className="mil-light" fontSize="50px" />,
-      title: 'Crafted Excellence',
+      title: 'Our Commitment',
       description:
-        'Each project reflects our passion for precision and sets new benchmarks in architectural glass and aluminium solutions.',
+        'Delivering precision-crafted solutions that meet international standards and exceed client expectations in every project.',
     },
   ];
 

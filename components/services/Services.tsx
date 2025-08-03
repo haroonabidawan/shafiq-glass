@@ -1,18 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
+import { HiOutlineCube, HiOutlineViewGrid } from 'react-icons/hi';
 
 const services = [
   {
-    title: 'Glass Installations',
-    link: '/services/glass-partitioning',
+    title: 'Glass Solutions',
+    link: '/services/glass-solutions',
     description:
-      'Precision-crafted glass partitions, shower enclosures, balustrades, and facades—engineered for modern aesthetics and long-lasting clarity.',
+      'Premium glass products including shower enclosures, mirrors, double-glazed units, laminated glass, tempered glass, fire-rated glass, and innovative smart glass for residential and commercial applications.',
+    icon: <HiOutlineCube size={40} className="mil-accent" />,
   },
   {
-    title: 'Aluminium Fabrication',
-    link: '/services/aluminium-fabrication',
+    title: 'Aluminum Solutions',
+    link: '/services/aluminum-solutions',
     description:
-      'Tailored aluminium solutions including doors, windows, curtain walls, and structural framing—built to meet architectural and performance demands.',
+      'Custom aluminum fabrication including windows, doors, curtain walls, ACP cladding, pergolas, and CNC-designed architectural elements built to international standards.',
+    icon: <HiOutlineViewGrid size={40} className="mil-accent" />,
   },
 ];
 
@@ -22,43 +25,48 @@ const Services = () => {
       <div className="container">
         <div className="row justify-content-between align-items-center">
           {/* Left Text Column */}
-          <div className="col-lg-5 mil-mb-100 d-flex flex-column justify-content-center">
+          <div className="col-lg-6 mil-mb-100 d-flex flex-column justify-content-center">
             <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
               SERVICES
             </div>
             <h2 className="mil-mb-30 mil-up">
-              Customized Glass & Aluminium Solutions for Every Environment
+              Comprehensive Glass & Aluminum Solutions for Every Project
             </h2>
             <p className="mil-up">
-              At Shafiq Glass & Aluminium, we bring over 15 years of experience
-              to every project—offering tailored solutions for homes, offices,
-              showrooms, and industrial spaces. Whether you&apos;re upgrading
-              interiors or building from the ground up, our team ensures
-              seamless execution from design to installation.
+              Since 2005, Shafiq Glass & Aluminum has delivered
+              precision-engineered solutions across Bahrain. Our expertise spans
+              residential, commercial, and industrial applications, with
+              end-to-end services from custom design to professional
+              installation.
             </p>
           </div>
 
           {/* Right Services List */}
           <div className="col-lg-6">
-            <ul className="mil-service-list">
-              {services.map((service, index) => (
-                <li
-                  key={index}
-                  className="mil-mb-50 mil-up"
-                  data-count={index + 1}
-                >
-                  <Link
-                    href={service.link}
-                    className="mil-service-item d-block cursor-pointer h-100"
-                  >
-                    <div className="d-flex flex-column h-100">
-                      <h4 className="mil-accent mil-mb-15">{service.title}</h4>
-                      <p>{service.description}</p>
+            {services.map((service, index) => (
+              <Link
+                key={index}
+                href={service.link}
+                className="text-decoration-none"
+              >
+                <div className="mil-mb-40 mil-up">
+                  <div className="mil-bg-soft mil-wwd-card p-4 h-100 d-flex flex-column justify-content-start align-items-start text-start rounded shadow-sm hover-mil-scale">
+                    <div className="d-flex align-items-center mb-3">
+                      <div className="me-3">{service.icon}</div>
+                      <h5 className="mb-0 fw-semibold mil-accent">
+                        {service.title}
+                      </h5>
                     </div>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                    <p className="text-sm">{service.description}</p>
+                    <div className="mt-auto pt-2">
+                      <span className="mil-link mil-text-sm">
+                        Explore Services
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
