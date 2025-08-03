@@ -4,6 +4,7 @@ import React from 'react';
 import { sliderProps } from '@/utility/sliderProps';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { getFeaturedProjects } from '@/data/projects';
+import Link from 'next/link';
 
 const FeatureProjects = () => {
   const featuredProjects = getFeaturedProjects();
@@ -11,19 +12,29 @@ const FeatureProjects = () => {
   return (
     <div className="mil-bg-soft mil-p-200-200">
       <div className="container mil-relative">
-        <div className="row">
-          <div className="col-lg-6">
+        <div className="row justify-content-between align-items-center mil-mb-60">
+          <div className="col-lg-6 mil-mb-60">
             <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
               FEATURED PROJECTS
             </div>
-            <h2 className="mil-mb-30 mil-up">
+            <h3 className="mil-mb-30 mil-up">
               Signature Glass & Aluminum Installations
-            </h2>
-            <p className="mil-mb-100 mil-up">
+            </h3>
+            <p className="mil-up">
               Explore our commitment to excellence through our most prestigious
               projects—crafted to meet the highest standards in aesthetics and
               performance across Bahrain.
             </p>
+          </div>
+          <div className="col-lg-4 mil-mb-60">
+            <div className="mil-up">
+              <Link
+                href="/projects"
+                className="mil-btn mil-btn-sm mil-with-arrow"
+              >
+                View All Projects
+              </Link>
+            </div>
           </div>
         </div>
 
