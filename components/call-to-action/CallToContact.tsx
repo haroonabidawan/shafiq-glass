@@ -49,7 +49,7 @@ const CallToContact = () => {
                 <li>State-of-the-Art Facility</li>
                 <li>International Quality Standards</li>
                 <li>End-to-End Project Management</li>
-                <li>50+ Skilled Professionals</li>
+                <li>200+ Skilled Professionals</li>
               </ul>
             </div>
           </div>

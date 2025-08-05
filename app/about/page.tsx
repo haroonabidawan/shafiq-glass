@@ -46,7 +46,7 @@ const page = () => {
                 local glass workshop to Bahrain&apos;s leading fabrication
                 facility. Following major expansion in 2014, our 5,500 sqm plant
                 in Hidd Industrial Area now houses state-of-the-art equipment
-                and a skilled team of 50+ professionals.
+                and a skilled team of 200+ professionals.
               </p>
               <p className="mil-mb-30 mil-up">
                 As specialized subcontractors, we collaborate with
@@ -69,7 +69,7 @@ const page = () => {
                   <div className="mil-icon-frame mil-icon-frame-md mil-mb-15">
                     <FaUsers className="mil-accent" size={48} />
                   </div>
-                  <h5 className="mil-mb-10">50+ Skilled Professionals</h5>
+                  <h5 className="mil-mb-10">200+ Skilled Professionals</h5>
                   <p>Specialized in glass and aluminum fabrication</p>
                 </div>
 

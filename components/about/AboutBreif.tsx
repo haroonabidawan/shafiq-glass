@@ -16,7 +16,7 @@ const AboutBreif = () => {
             <p className="mil-mb-30 mil-up">
               Shafiq Glass & Aluminum has been delivering precision-engineered
               architectural solutions from our 5,500 sqm facility in Hidd
-              Industrial Area. With state-of-the-art machinery and 50+ skilled
+              Industrial Area. With state-of-the-art machinery and 200+ skilled
               professionals, we meet international standards for all glass and
               aluminum applications.
             </p>
