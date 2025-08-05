@@ -66,7 +66,7 @@ const HomePage = () => {
               <div className="mil-banner-text-frame">
                 <div className="mil-banner-text">
                   <div className="mil-suptitle mil-light mil-mb-30">
-                    Trusted Experts in Glass & Aluminum Since 2005
+                    Trusted Experts in Glass & Aluminum Since 2006
                   </div>
                   <h1 className="mil-display-2 mil-light mil-mb-60">
                     Precision. <br />

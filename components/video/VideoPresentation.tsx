@@ -17,7 +17,7 @@ const VideoPresentation = () => {
             </h2>
             <p className="mil-up">
               Witness how our team transforms raw materials into architectural
-              excellence. Since 2005, we&apos;ve combined traditional
+              excellence. Since 2006, we&apos;ve combined traditional
               craftsmanship with cutting-edge technology to deliver
               Bahrain&apos;s finest glass and aluminum solutions.
             </p>

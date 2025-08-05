@@ -33,7 +33,7 @@ const Services = () => {
               Comprehensive Glass & Aluminum Solutions for Every Project
             </h2>
             <p className="mil-up">
-              Since 2005, Shafiq Glass & Aluminum has delivered
+              Since 2006, Shafiq Glass & Aluminum has delivered
               precision-engineered solutions across Bahrain. Our expertise spans
               residential, commercial, and industrial applications, with
               end-to-end services from custom design to professional

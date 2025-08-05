@@ -39,10 +39,10 @@ const page = () => {
                 OUR STORY
               </div>
               <h2 className="mil-mb-30 mil-up">
-                Precision Fabricators Since 2005
+                Precision Fabricators Since 2006
               </h2>
               <p className="mil-text-22 mil-mb-30 mil-up">
-                Established in 2005, Shafiq Glass & Aluminum has grown from a
+                Established in 2006, Shafiq Glass & Aluminum has grown from a
                 local glass workshop to Bahrain&apos;s leading fabrication
                 facility. Following major expansion in 2014, our 5,500 sqm plant
                 in Hidd Industrial Area now houses state-of-the-art equipment

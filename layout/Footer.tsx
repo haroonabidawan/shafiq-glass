@@ -18,7 +18,7 @@ const Footer = () => {
               />
             </div>
             <p className="mil-light-soft mil-up mil-mb-30">
-              Precision glass and aluminum solutions since 2005, serving
+              Precision glass and aluminum solutions since 2006, serving
               Bahrain&apos;s architectural and construction industries with
               quality craftsmanship.
             </p>

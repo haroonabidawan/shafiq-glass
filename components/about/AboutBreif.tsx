@@ -11,7 +11,7 @@ const AboutBreif = () => {
               About Us
             </div>
             <h2 className="mil-mb-30 mil-up">
-              Bahrain&apos;s Glass & Aluminum Experts Since 2005
+              Bahrain&apos;s Glass & Aluminum Experts Since 2006
             </h2>
             <p className="mil-mb-30 mil-up">
               Shafiq Glass & Aluminum has been delivering precision-engineered

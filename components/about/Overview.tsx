@@ -14,7 +14,7 @@ const Overview = () => {
               Crafting Bahrain&apos;s Finest Glass & Aluminum Solutions
             </h2>
             <p className="mil-mb-50 mil-up">
-              Since 2005, Shafiq Glass & Aluminum has been a trusted name in
+              Since 2006, Shafiq Glass & Aluminum has been a trusted name in
               delivering architectural glass and aluminum solutions across
               Bahrain. Our expertise spans commercial facades to residential
               installations, combining precision engineering with innovative
