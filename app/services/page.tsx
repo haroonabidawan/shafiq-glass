@@ -14,7 +14,7 @@ const page = () => {
         pageName="Our Services"
         pageUrl="services"
         pageTitle="Glass & Aluminum Solutions"
-        bgImg="img/banners/banner.jpg"
+        bgImg="/img/banners/banner.jpg"
       />
 
       <Services />

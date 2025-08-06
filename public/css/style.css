@@ -3140,7 +3140,7 @@ blog
 .mil-blog-card .mil-cover-frame {
   position: relative;
   overflow: hidden;
-  padding-bottom: 65%;
+  padding-bottom: 75%;
 }
 .mil-blog-card .mil-cover-frame .mil-hover-frame {
   position: absolute;

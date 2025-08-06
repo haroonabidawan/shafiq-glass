@@ -1,25 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import { HiOutlineCube, HiOutlineViewGrid } from 'react-icons/hi';
-
-const services = [
-  {
-    title: 'Glass Solutions',
-    link: '/services/glass-solutions',
-    description:
-      'Premium glass products including shower enclosures, mirrors, double-glazed units, laminated glass, tempered glass, fire-rated glass, and innovative smart glass for residential and commercial applications.',
-    icon: <HiOutlineCube size={40} className="mil-accent" />,
-  },
-  {
-    title: 'Aluminum Solutions',
-    link: '/services/aluminum-solutions',
-    description:
-      'Custom aluminum fabrication including windows, doors, curtain walls, ACP cladding, pergolas, and CNC-designed architectural elements built to international standards.',
-    icon: <HiOutlineViewGrid size={40} className="mil-accent" />,
-  },
-];
+import { getServicesList } from '@/data/services';
 
 const Services = () => {
+  // Use the helper function to get all services
+  const services = getServicesList();
+
   return (
     <div className="mil-p-200-150">
       <div className="container">
@@ -43,30 +29,35 @@ const Services = () => {
 
           {/* Right Services List */}
           <div className="col-lg-6">
-            {services.map((service, index) => (
-              <Link
-                key={index}
-                href={service.link}
-                className="text-decoration-none"
-              >
-                <div className="mil-mb-40 mil-up">
-                  <div className="mil-bg-soft mil-wwd-card p-4 h-100 d-flex flex-column justify-content-start align-items-start text-start rounded shadow-sm hover-mil-scale">
-                    <div className="d-flex align-items-center mb-3">
-                      <div className="me-3">{service.icon}</div>
-                      <h5 className="mb-0 fw-semibold mil-accent">
-                        {service.title}
-                      </h5>
-                    </div>
-                    <p className="text-sm">{service.description}</p>
-                    <div className="mt-auto pt-2">
-                      <span className="mil-link mil-text-sm">
-                        Explore Services
-                      </span>
+            {services.map((service, index) => {
+              const Icon = service.icon; // Get the icon component
+              return (
+                <Link
+                  key={index}
+                  href={`/services/${service.slug}`}
+                  className="text-decoration-none"
+                >
+                  <div className="mil-mb-40 mil-up">
+                    <div className="mil-bg-soft mil-wwd-card p-4 h-100 d-flex flex-column justify-content-start align-items-start text-start rounded shadow-sm hover-mil-scale">
+                      <div className="d-flex align-items-center mb-3">
+                        <div className="me-3">
+                          <Icon size={40} className="mil-accent" />
+                        </div>
+                        <h5 className="mb-0 fw-semibold mil-accent">
+                          {service.title}
+                        </h5>
+                      </div>
+                      <p className="text-sm">{service.description}</p>
+                      <div className="mt-auto pt-2">
+                        <span className="mil-link mil-text-sm">
+                          Explore Services
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
