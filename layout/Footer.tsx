@@ -85,7 +85,7 @@ const Footer = () => {
               <br />
               Friday: Closed
               <br />
-              Saturday: 9:00 AM - 1:00 PM
+              Saturday: 8:00 AM - 5:00 PM
             </p>
             <h6 className="mil-light mil-mb-20 mil-up">Stay Connected</h6>
             <div className="mil-social-icons mil-up">

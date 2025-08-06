@@ -2156,7 +2156,7 @@ projects
 .mil-project-card .mil-cover-frame {
   position: relative;
   overflow: hidden;
-  padding-bottom: 100%;
+  padding-bottom: 75%;
 }
 .mil-project-card .mil-cover-frame .mil-hover-frame {
   position: absolute;
