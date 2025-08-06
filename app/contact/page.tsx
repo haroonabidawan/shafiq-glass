@@ -106,7 +106,7 @@ const page = () => {
                   <textarea
                     name="Message"
                     placeholder="Message"
-                    className="mil-input mil-mb-30 mil-up"
+                    className="mil-mb-30 mil-up"
                     rows={5}
                     required
                   />
