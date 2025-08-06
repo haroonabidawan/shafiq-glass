@@ -14,16 +14,16 @@ const AboutBreif = () => {
               Bahrain&apos;s Glass & Aluminum Experts Since 2006
             </h2>
             <p className="mil-mb-30 mil-up">
-              Shafiq Glass & Aluminum has been delivering precision-engineered
-              architectural solutions from our 5,500 sqm facility in Hidd
-              Industrial Area. With state-of-the-art machinery and 200+ skilled
-              professionals, we meet international standards for all glass and
-              aluminum applications.
+              Shafiq Glass & Aluminum has been a leader in architectural glass
+              and aluminum solutions for nearly two decades. Operating from two
+              state-of-the-art facilities in Hidd Industrial Area — spanning
+              5,500 sqm and 5,200 sqm — we are equipped with modern machinery
+              and a team of over 200 skilled professionals.
             </p>
             <p className="mil-mb-50 mil-up">
-              From commercial curtain walls to residential installations, our
-              end-to-end services ensure quality craftsmanship for every project
-              across Bahrain.
+              From commercial facades to residential partitions, our commitment
+              to precision, quality, and craftsmanship ensures we meet
+              international standards across every project in Bahrain.
             </p>
             <div className="mil-up">
               <Link href="/about" className="mil-btn mil-btn-sm mil-with-arrow">
@@ -35,8 +35,8 @@ const AboutBreif = () => {
             <div className="mil-out-image mil-up">
               <img
                 loading="lazy"
-                src="img/about/about.jpg"
-                alt="Shafiq Glass manufacturing facility"
+                src="/img/about/about.jpg"
+                alt="Shafiq Glass & Aluminum manufacturing facility"
                 data-value-1={1}
                 data-value-2="1.1"
                 className="mil-scale-img"
@@ -48,4 +48,5 @@ const AboutBreif = () => {
     </div>
   );
 };
+
 export default AboutBreif;

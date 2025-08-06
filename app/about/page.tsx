@@ -18,6 +18,7 @@ import Services from '@/components/services/Services';
 import FeatureProjects from '@/components/projects/FeatureProjects';
 import CallToContact from '@/components/call-to-action/CallToContact';
 import MissionVision from '@/components/about/MissionVision';
+import WhyChooseUs from '@/components/about/WhyChooseUs';
 
 const page = () => {
   return (
@@ -243,6 +244,8 @@ const page = () => {
 
       {/* Video Presentation */}
       <VideoPresentation />
+
+      <WhyChooseUs />
 
       {/* Call to Action */}
       <CallToContact />

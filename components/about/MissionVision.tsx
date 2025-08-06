@@ -30,7 +30,7 @@ const MissionVision = () => {
         <div className="row mil-mb-50">
           {items.map((item, index) => (
             <div key={index} className="col-md-6 col-lg-4 mil-mb-50">
-              <div className="h-100 d-flex align-items-center flex-column">
+              <div className="h-100 d-flex align-items-center flex-column px-3">
                 <div className="mil-icon mil-mb-30 mil-up">{item.icon}</div>
                 <h5 className="mil-mb-20 mil-light mil-up">{item.title}</h5>
                 <p className="mil-up mil-light mil-text-justify flex-grow-1">

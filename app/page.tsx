@@ -9,6 +9,7 @@ import FeatureProjects from '@/components/projects/FeatureProjects';
 import CallToContact from '@/components/call-to-action/CallToContact';
 import MoorkLayout from '@/layout/MoorkLayout';
 import MissionVision from '@/components/about/MissionVision';
+import WhyChooseUs from '@/components/about/WhyChooseUs';
 
 export const metadata = {
   title:
@@ -102,6 +103,7 @@ const HomePage = () => {
       <AboutBreif />
       <VideoPresentation />
       <FeatureProjects />
+      <WhyChooseUs />
       <CallToContact />
     </MoorkLayout>
   );

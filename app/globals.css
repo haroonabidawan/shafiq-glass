@@ -59,3 +59,23 @@
 .mil-wwd-card:hover h5 {
   color: #fff;
 }
+
+/* Add to your global CSS */
+.mil-benefit-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mil-benefit-list li {
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+.mil-benefit-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
