@@ -1,26 +1,29 @@
-// app/services/[slug]/page.tsx
 import React from 'react';
 import MoorkLayout from '@/layout/MoorkLayout';
 import { getServiceBySlug } from '@/data/services';
 import Link from 'next/link';
 
-interface ServicePageProps {
-  params: { slug: string };
-}
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
 
-const ServiceDetail = async ({ params }: ServicePageProps) => {
-  const { slug } = params;
-  const service = getServiceBySlug(slug);
+  const service = await getServiceBySlug(slug);
 
   if (!service) {
     return (
       <MoorkLayout>
-        <div className="container py-20 text-center">
-          <h2 className="text-3xl font-bold mb-4">Service Not Found</h2>
-          <p className="text-gray-500">
-            We couldn&ampos;t find the service you&ampos;re looking for.
-          </p>
-        </div>
+        <div className="mil-banner-space" />
+        <section className="mil-p-200-100">
+          <div className="container">
+            <h2 className="text-3xl font-bold mb-4">404 Not Found</h2>
+            <p className="text-gray-500">
+              We couldn&apos;t find the service you&apos;re looking for.
+            </p>
+          </div>
+        </section>
       </MoorkLayout>
     );
   }
@@ -29,7 +32,6 @@ const ServiceDetail = async ({ params }: ServicePageProps) => {
 
   return (
     <MoorkLayout>
-      {/* Service Intro */}
       <section className="mil-p-200-100">
         <div className="container">
           <ul className="mil-breadcrumbs mil-dark mil-mb-30 mil-up">
@@ -40,21 +42,23 @@ const ServiceDetail = async ({ params }: ServicePageProps) => {
               <Link href="/services">Services</Link>
             </li>
             <li>
-              <Link href="publication">{service.title}</Link>
+              <Link href={`/services/${slug}`}>{service.title}</Link>
             </li>
           </ul>
+
           <div className="mb-5 mil-up">
-            <h1 className="text-4xl font-bold mb-4">
-              <Icon size={60} className="text-primary flex-shrink-0" />{' '}
-              {service.title}
+            <h1 className="text-4xl font-bold mb-4 flex items-center gap-4">
+              <Icon size={60} className="text-primary" /> {service.title}
             </h1>
-            <div
+
+            <p
               className="text-lg text-gray-600"
-              dangerouslySetInnerHTML={{ __html: service.detailDescription }}
+              dangerouslySetInnerHTML={{
+                __html: service.detailDescription.replace(/\n/g, '<br />'),
+              }}
             />
           </div>
 
-          {/* Products Grid */}
           {service.products?.length > 0 && (
             <section className="mb-16 mil-up">
               <h2 className="text-2xl font-semibold mb-6 text-primary my-5">
@@ -87,7 +91,6 @@ const ServiceDetail = async ({ params }: ServicePageProps) => {
             </section>
           )}
 
-          {/* Services Grid */}
           {service.services?.length > 0 && (
             <section className="mil-up">
               <h2 className="text-2xl font-semibold mb-6 text-primary my-5">
@@ -124,6 +127,4 @@ const ServiceDetail = async ({ params }: ServicePageProps) => {
       </section>
     </MoorkLayout>
   );
-};
-
-export default ServiceDetail;
+}
