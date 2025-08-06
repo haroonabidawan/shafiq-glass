@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  FaIndustry,
-  FaUsers,
-  FaAward,
-  FaBuilding,
-  FaDoorOpen,
-  FaColumns,
-  FaLayerGroup,
-  FaGripLines,
-  FaGem,
-} from 'react-icons/fa';
+import { FaIndustry, FaUsers, FaAward } from 'react-icons/fa';
 
 import MoorkLayout from '@/layout/MoorkLayout';
 import PageBanner from '@/components/PageBanner';
@@ -19,6 +9,7 @@ import FeatureProjects from '@/components/projects/FeatureProjects';
 import CallToContact from '@/components/call-to-action/CallToContact';
 import MissionVision from '@/components/about/MissionVision';
 import WhyChooseUs from '@/components/about/WhyChooseUs';
+import OurCapabilities from '@/components/services/OurCapabilities';
 
 const page = () => {
   return (
@@ -105,98 +96,7 @@ const page = () => {
       </div>
 
       {/* Capabilities Section */}
-      <div className="mil-p-200-100 mil-bg-soft">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 mil-mb-60">
-              <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                OUR CAPABILITIES
-              </div>
-              <h3 className="mil-mb-30 mil-up">
-                Specialized Glass & Aluminum Fabrication
-              </h3>
-              <p className="mil-up">
-                As subcontractors, we excel in fabricating custom solutions to
-                precise architectural specifications. Our capabilities include:
-              </p>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-md-6 col-lg-4 mil-mb-60">
-              <div className="mil-icon-box-2 mil-up mil-wwd-card p-4">
-                <div className="mil-icon-frame mil-icon-frame-md mil-mb-30">
-                  <FaBuilding className="mil-accent" size={48} />
-                </div>
-                <h5 className="mil-mb-20">Structural Glazing</h5>
-                <p className="mil-text-center">
-                  Modern curtain wall systems for commercial buildings
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 mil-mb-60">
-              <div className="mil-icon-box-2 mil-up mil-wwd-card p-4">
-                <div className="mil-icon-frame mil-icon-frame-md mil-mb-30">
-                  <FaDoorOpen className="mil-accent" size={48} />
-                </div>
-                <h5 className="mil-mb-20">Windows & Doors</h5>
-                <p className="mil-text-center">
-                  Custom aluminum windows, doors, and storefronts
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 mil-mb-60">
-              <div className="mil-icon-box-2 mil-up mil-wwd-card p-4">
-                <div className="mil-icon-frame mil-icon-frame-md mil-mb-30">
-                  <FaColumns className="mil-accent" size={48} />
-                </div>
-                <h5 className="mil-mb-20">Glass Partitions</h5>
-                <p className="mil-text-center">
-                  Interior glass systems for offices and commercial spaces
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 mil-mb-60">
-              <div className="mil-icon-box-2 mil-up mil-wwd-card p-4">
-                <div className="mil-icon-frame mil-icon-frame-md mil-mb-30">
-                  <FaLayerGroup className="mil-accent" size={48} />
-                </div>
-                <h5 className="mil-mb-20">ACP Cladding</h5>
-                <p className="mil-text-center">
-                  Aluminum composite panel installation for facades
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 mil-mb-60">
-              <div className="mil-icon-box-2 mil-up mil-wwd-card p-4">
-                <div className="mil-icon-frame mil-icon-frame-md mil-mb-30">
-                  <FaGripLines className="mil-accent" size={48} />
-                </div>
-                <h5 className="mil-mb-20">Glass Railings</h5>
-                <p className="mil-text-center">
-                  Safety glass railings for balconies and staircases
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 mil-mb-60">
-              <div className="mil-icon-box-2 mil-up mil-wwd-card p-4">
-                <div className="mil-icon-frame mil-icon-frame-md mil-mb-30">
-                  <FaGem className="mil-accent" size={48} />
-                </div>
-                <h5 className="mil-mb-20">Specialty Glass</h5>
-                <p className="mil-text-center">
-                  Tempered, laminated, fire-rated, and smart glass solutions
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <OurCapabilities />
 
       {/* Certifications */}
       <div className="mil-p-200-100">
