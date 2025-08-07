@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
       icon: <FaIndustry size={48} className="mil-accent" />,
     },
     {
-      title: 'ISO-Certified Quality',
+      title: 'Best Quality',
       description:
         'We adhere to international standards and local regulations to ensure consistent quality, safety, and durability in every project.',
       icon: <FaCertificate size={48} className="mil-accent" />,

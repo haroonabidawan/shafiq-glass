@@ -14,9 +14,6 @@ const RequestQuotation = () => {
         bgImg="img/banners/banner.jpg"
       />
 
-      <div className="mil-p-200-0 mil-bg-soft">
-        <WhyChooseUs />
-      </div>
       <div className="mil-p-200-100">
         <div className="container">
           <div className="row justify-content-center">
@@ -91,6 +88,10 @@ const RequestQuotation = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mil-p-200-0 mil-bg-soft">
+        <WhyChooseUs />
       </div>
     </MoorkLayout>
   );

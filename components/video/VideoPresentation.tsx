@@ -42,7 +42,7 @@ const VideoPresentation = () => {
               <div className="mil-play absolute inset-0 flex items-center justify-center z-10 bg-black bg-opacity-20 hover:bg-opacity-30 transition-all">
                 <div className="text-center">
                   <a
-                    href="https://www.youtube.com/watch?v=shafiqglass-process-video"
+                    href="https://youtu.be/WsQqcg469V4"
                     className="mil-play-icon has-popup-video inline-flex items-center justify-center rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition-all"
                     target="_blank"
                     rel="noopener noreferrer"
