@@ -1,14 +1,13 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 
 const VideoPresentation = () => {
   return (
     <div className="mil-p-200-100 mil-bg-soft">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row align-items-center justify-content-center">
           {/* Text Section */}
-          <div className="col-lg-4 mil-mb-100">
+          <div className="col-lg-4">
             <div className="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
               BEHIND THE CRAFT
             </div>
@@ -29,43 +28,18 @@ const VideoPresentation = () => {
           </div>
 
           {/* Video Section */}
-          <div className="col-lg-8 mil-mb-100">
-            <div className="mil-video-frame mil-video-2 mil-up relative rounded overflow-hidden shadow-lg">
-              <Image
-                src="/img/home/video-cover.jpg"
-                alt="Shafiq Glass & Aluminum manufacturing process"
-                width={800}
-                height={450}
-                className="w-full h-auto object-cover z-0"
-                priority
-              />
-              <div className="mil-play absolute inset-0 flex items-center justify-center z-10 bg-black bg-opacity-20 hover:bg-opacity-30 transition-all">
-                <div className="text-center">
-                  <a
-                    href="https://youtu.be/WsQqcg469V4"
-                    className="mil-play-icon has-popup-video inline-flex items-center justify-center rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition-all"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Play manufacturing process video"
-                  >
-                    <svg
-                      width={35}
-                      height={40}
-                      viewBox="0 0 35 40"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M34.6667 20L0 40L1.74975e-06 0L34.6667 20Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </a>
-                  <p className="mil-text-14 mil-light mt-4 font-medium tracking-wider">
-                    WATCH OUR PROCESS
-                  </p>
-                </div>
-              </div>
+          <div className="col-lg-8">
+            <div className="mil-up relative rounded overflow-hidden shadow-lg">
+              <iframe
+                width="800"
+                height="450"
+                src="https://www.youtube.com/embed/WsQqcg469V4?si=XqwM4WrIfiGqeBBt"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>

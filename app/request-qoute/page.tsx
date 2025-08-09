@@ -11,7 +11,7 @@ const RequestQuotation = () => {
         pageName="Request Quotation"
         pageUrl="request-quotation"
         pageTitle="Request Quotation"
-        bgImg="img/banners/banner.jpg"
+        bgImg="/img/banners/request-for-qoute.jpg"
       />
 
       <div className="mil-p-200-100">

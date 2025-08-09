@@ -1872,10 +1872,10 @@ illustrations
   padding-bottom: 65%;
 }
 .mil-image-simple.mil-land-plus {
-  padding-bottom: 75%;
+  padding-bottom: 90%;
 }
 .mil-image-simple.mil-land-short {
-  padding-bottom: 55%;
+  padding-bottom: 90%;
 }
 .mil-image-simple.mil-square {
   padding-bottom: 100%;
@@ -2156,7 +2156,7 @@ projects
 .mil-project-card .mil-cover-frame {
   position: relative;
   overflow: hidden;
-  padding-bottom: 75%;
+  padding-bottom: 95%;
 }
 .mil-project-card .mil-cover-frame .mil-hover-frame {
   position: absolute;
@@ -2568,8 +2568,9 @@ reviews
 .mil-review-card {
   position: relative;
   background-color: #f8f8f8;
-  padding: 60px;
+  padding: 10px 35px;
   border-left: solid 5px #299aab;
+  height: 100%;
 }
 .mil-review-card .mil-card-info {
   display: -webkit-box;

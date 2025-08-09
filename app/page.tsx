@@ -59,7 +59,9 @@ const HomePage = () => {
       {/* Hero Banner */}
       <div
         className="mil-banner mil-banner-5 mil-bg-soft"
-        style={{ backgroundImage: 'url(/img/home/hero.png)' }}
+        style={{
+          backgroundImage: `linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 70%)), url(/img/home/hero.jpg)`,
+        }}
       >
         <div className="container">
           <div className="row align-items-center">

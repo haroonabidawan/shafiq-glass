@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
         <div className="row">
           {reasons.map((reason, index) => (
             <div key={index} className="col-md-6 col-lg-4 mil-mb-60">
-              <div className="mil-review-card py-2 mil-mb-30">
+              <div className="mil-review-card">
                 <div className="mil-icon-frame mil-icon-frame-md mil-mb-15">
                   {reason.icon}
                 </div>

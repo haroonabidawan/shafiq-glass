@@ -6,9 +6,9 @@ const CallToContact = () => {
     <div
       className="mil-p-200-200 mil-bg-image"
       style={{
-        backgroundImage: 'url(/img/call-to-action/contact-background.png)',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
+        backgroundImage: `linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 75%)), url(/img/call-to-action/contact-background.jpg)`,
       }}
     >
       <div className="container">

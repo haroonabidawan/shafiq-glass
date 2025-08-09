@@ -19,7 +19,7 @@ const HeaderMenu = () => {
         <Link href="/request-qoute">Request Qoute</Link>
       </li>
       <li className={isActive('services')}>
-        <Link href="/services">Services</Link>
+        <Link href="/services">Services & Products</Link>
       </li>
       <li className={isActive('projects')}>
         <Link href="/projects">Projects</Link>

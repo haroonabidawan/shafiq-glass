@@ -19,7 +19,7 @@ const page = () => {
         pageName="About Us"
         pageUrl="about"
         pageTitle="About Us"
-        bgImg="img/banners/banner.jpg"
+        bgImg="/img/banners/banner.jpg"
       />
 
       {/* Company Overview */}
